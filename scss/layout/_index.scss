@@ -1,0 +1,156 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+body {
+    background-color:#191919;
+}
+
+
+
+/* Header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+.nav__brand,.nav-link {
+    font-size: 24px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+
+/*main*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'left left right right';
+    padding: 20px;
+}
+
+/*hero left*/
+
+.hero__left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 50px;
+}
+.hero__left h1 {
+    color: #ffff;
+    font-size: 2.5rem;
+}
+
+.hero__left p {
+    color: #ffff;
+    font-size: 1.6rem;
+}
+
+.hero__left a {
+    background-color: #ffff;
+    color:#0586de;
+    border-radius: 10px;
+    font-weight:bold ;
+    padding: 10px 14px;
+    text-align: center;
+    min-width: 250px;
+    max-width: 50%;
+}
+
+.hero__left__users {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.hero__left__users img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid #ffff;
+    margin: -10px;
+}
+
+/*hero right*/
+
+.hero__right {
+    grid-area: right;
+    position: relative;
+}
+
+.hero__right img {
+    width: 100%;
+    min-height: 800px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero__right__title {
+    padding: 25px;
+    background-color: #eeeeeebd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.c1 {
+    position: absolute;
+    bottom: 30%;
+    left: -20%;
+}
+
+.c2 {
+    position: absolute;
+    bottom: 5%;
+    left: -15%;
+}
+
+.bluebar {
+    background-color: #0586de;
+    width: 30%;
+    height: 13px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.graybar {
+    background-color: #717679;
+    width: 70%;
+    height: 13px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+
+/*color #0586d*/
+
+/*footer*/
+footer p{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+}
+ 
+
+.container {
+ display: flex;
+ justify-content: end;
+
+}
+i {
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+}

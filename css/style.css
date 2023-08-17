@@ -5,7 +5,18 @@
   font-family: Nunito sans-serif;
 }
 
-/*color #0586d*/
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-btn {
+  background-color: white;
+  color: #0587de;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
 a {
   text-decoration: none;
 }
@@ -29,18 +40,6 @@ nav {
   font-size: 24px;
   color: white;
   font-weight: bold;
-}
-
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-btn {
-  background-color: white;
-  color: #0587de;
-  border-radius: 10px;
-  padding: 10px 14px;
 }
 
 /*main*/
@@ -148,6 +147,7 @@ main {
   display: inline-block;
 }
 
+/*color #0586d*/
 /*footer*/
 footer p {
   font-size: 1.2rem;
