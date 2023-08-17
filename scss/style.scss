@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Nunito sans-serif;
+}
+/*color #0586d*/
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+body {
+    background-color:#191919;
+}
+
+
+
+/* Header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+.nav__brand,.nav-link {
+    font-size: 24px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+.nav-btn {
+    background-color: #ffff;
+    color: #0587de;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+/*main*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'left left right right';
+    padding: 20px;
+}
+
+/*hero left*/
+
+.hero__left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 50px;
+}
+.hero__left h1 {
+    color: #ffff;
+    font-size: 2.5rem;
+}
+
+.hero__left p {
+    color: #ffff;
+    font-size: 1.6rem;
+}
+
+.hero__left a {
+    background-color: #ffff;
+    color:#0586de;
+    border-radius: 10px;
+    font-weight:bold ;
+    padding: 10px 14px;
+    text-align: center;
+    min-width: 250px;
+    max-width: 50%;
+}
+
+.hero__left__users {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.hero__left__users img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid #ffff;
+    margin: -10px;
+}
+
+/*hero right*/
+
+.hero__right {
+    grid-area: right;
+    position: relative;
+}
+
+.hero__right img {
+    width: 100%;
+    min-height: 800px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero__right__title {
+    padding: 25px;
+    background-color: #eeeeeebd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.c1 {
+    position: absolute;
+    bottom: 30%;
+    left: -20%;
+}
+
+.c2 {
+    position: absolute;
+    bottom: 5%;
+    left: -15%;
+}
+
+.bluebar {
+    background-color: #0586de;
+    width: 30%;
+    height: 13px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.graybar {
+    background-color: #717679;
+    width: 70%;
+    height: 13px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+
+
+/*footer*/
+footer p{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+}
+ 
+
+.container {
+ display: flex;
+ justify-content: end;
+
+}
+i {
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+/* mediaqueries*/
+
+@media only screen and (max-width:990px) {
+    .c1,.c2{
+        position: static;
+        margin: 10px 0;
+    }
+    .bluebar {
+        width: 20%;
+        height: 10px;
+    }
+    .graybar {
+        width: 50%;
+        height: 10px;
+    }
+
+    
+}
+
+@media only screen and (max-width:660px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .c1,.c2 {
+        text-align: center;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .hero__right img {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+@media only screen and (max-width:400px){
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__left p {
+        text-align: center;
+    }
+    .hero__left a {
+        width: 100%;
+        align-self: center;
+    }
+    .hero__left,.hero__right {
+        width: 100%;
+    }
+    footer p {
+        text-align: center;
+    }
+}
+/*agregando boostrap*/
+
+
+i {  color: #fff;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+/* estilos del login*/
+
+.form-login {
+    width: 400px;
+    height: 340px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+  }
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+  @media only screen and (max-width:400px){
+    .form-login {
+        width: 200px;
+    }
+  }
