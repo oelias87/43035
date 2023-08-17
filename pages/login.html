@@ -1,20 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
-    <title>loguin</title>
+   
+    <!--link a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--links de iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <!--link al css-->
+     <link rel="stylesheet" href="../style/style.css">
+    <title>NEW DREAMS</title>
 </head>
 <body>
-    <a href="../index.html">home</a>
+    <header>
+        <!--navbar-->
+        <nav>
+            <a href=""class="nav__brand">NEW DREAMS</a>
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html"class="nav-link">home</a>
+                </li>
+                <li>
+                    <a href="../pages/about.html"class="nav-link">about Us</a>
+                </li>
+                <li>
+                    <a href="../pages/gallery.html"class="nav-link">gallery</a>
+                </li>
+                <li>
+                    <a href="login.html"class="nav-link nav-btn">login</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main>
     <section class="form-login">
         <h5>Formulario Login</h5>
         <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
         <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
         <input class="buttons" type="submit" name="" value="Ingresar">
         <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
-  
-      </section>
+    </section>
+    </main>
+          <!--footer-->
+    <footer>
+        <p>siguenos en nuestras redes sociales </p>
+<section>
+        <div class="container">
+        <div><i class="bi bi-instagram"></i></div>
+        <div><i class="bi bi-facebook"></i></div>
+        <div><i class="bi bi-whatsapp"></i></div>
+        <div><i class="bi bi-youtube"></i></div>
+    </div>
+</section>
+    </footer>
+    <!--script boostrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

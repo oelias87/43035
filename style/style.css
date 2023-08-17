@@ -17,9 +17,7 @@ body {
     background-color:#191919;
 }
 
-img {
-    width: 200px;
-}
+
 
 /* Header*/
 nav {
@@ -52,6 +50,7 @@ main {
     grid-template-areas: 'left left right right';
     padding: 20px;
 }
+
 /*hero left*/
 
 .hero__left {
@@ -149,6 +148,8 @@ main {
     display: inline-block;
 }
 
+
+
 /*footer*/
 footer p{
     font-size: 1.2rem;
@@ -164,7 +165,11 @@ footer p{
  justify-content: end;
 
 }
-
+i {
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+}
 
 /* mediaqueries*/
 
